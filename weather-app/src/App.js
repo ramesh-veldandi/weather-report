@@ -4,7 +4,6 @@ import './App.css';
 import WeatherCard from './WeatherCard';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS } from 'chart.js/auto';
-import Git from './git';
 
 const App = () => {
   const [location, setLocation] = useState('');
@@ -78,7 +77,6 @@ const App = () => {
           <Line data={prepareChartData()} options={{ responsive: true, maintainAspectRatio: false }} />
         </div>
       )}
-      <Git/>
     </div>
   );
 };
