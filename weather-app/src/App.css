@@ -1,0 +1,139 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+input {
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  width: 250px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0072ff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  background-color: #0072ff;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+button:active {
+  background-color: #003d7a;
+}
+
+button:focus {
+  outline: none;
+}
+
+.error-message {
+  color: #ff4c4c;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Weather card styling */
+.weather-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.weather-card p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.weather-card .description {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.weather-card .temp {
+  font-size: 3rem;
+  margin: 15px 0;
+  color: #ffdd57;
+}
+
+.weather-card .humidity,
+.weather-card .pressure {
+  font-size: 1.5rem;
+  color: #a2a2a2;
+}
+
+/* Chart styling */
+.chart-container {
+  margin-top: 40px;
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .weather-card {
+    width: 90%;
+  }
+
+  .chart-container {
+    height: 250px;
+  }
+}
